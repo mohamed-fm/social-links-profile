@@ -1,0 +1,100 @@
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root{
+    --Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey-700: hsl(0, 0%, 20%);
+    --Grey-800: hsl(0, 0%, 12%);
+    --Grey-900: hsl(0, 0%, 8%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "inter";
+    height: 100vh;
+    background-color: var(--Grey-900);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card{
+    width: 325px;
+    padding: 30px;
+    background-color: var(--Grey-800);
+    border-radius: 10px;
+}
+.avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.avatar .img_holder img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+.avatar .details{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 20px;
+}
+.avatar .details h2{
+    font-size: 23px;
+    color: var(--White);
+    line-height: 100%;
+    margin-bottom: 5px;
+}
+.blod_p{
+    font-size: 14px;
+    font-weight: 600;
+    line-height:100% ;
+    transition: .3s ease-out;
+}
+.avatar .details p{
+    color: var(--Green);
+    font-weight: 700;
+}
+.scoials{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    
+}
+.scoials > p{
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--White);
+    margin-bottom: 5px;
+    margin-top: 5px;
+    color: var(--White);
+
+}
+.scoials .scoial_card {
+    padding: 14px 0;
+    background-color: var(--Grey-700);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: var(--White);
+    border-radius: 5px;
+    transition: .7s ease-out;
+}
+.scoials .scoial_card:hover{
+    background-color: var(--Green);
+    
+}
+.scoials .scoial_card:hover  p{
+    color: var(--Grey-900) ;
+}
